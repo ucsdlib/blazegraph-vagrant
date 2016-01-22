@@ -19,3 +19,8 @@ You can shell into the machine with `vagrant ssh` or `ssh -p 2222 vagrant@localh
 * Ubuntu 14.04 64-bit machine with:
   * [Blazegraph 1.5.3](http://sourceforge.net/projects/bigdata/files/bigdata/1.5.3/) at [http://localhost:9999/bigdata/](http://localhost:9999/bigdata/)
   * (more soon)
+  
+## Thanks
+
+* This VM setup was heavily influenced (read: stolen) from [Fedora 4 Vagrant](https://github.com/fcrepo4-exts/fcrepo4-vagrant).
+* The initial content and inspiration for this repository is taken from the [SPARQL Workshop](https://github.com/LODLAM/DLF15LODLAM/tree/master/SPARQL) given by [Tom Johnson](https://github.com/no-reply) at the DLF LODLAM meeting in 2015.
