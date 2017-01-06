@@ -12,7 +12,20 @@ This repository creates a Vagrant VM that bundles the [Blazegraph](https://www.b
 2. `cd blazegraph-vagrant`
 3. `vagrant up` (and be patient)
 
-You can shell into the machine with `vagrant ssh`
+Then login and start blazegraph:
+
+```
+$ vagrant ssh -- '/vagrant/downloads/BLAZEGRAPH_RELEASE_2_1_4/scripts/startBlazegraph.sh'
+```
+
+There are several scripts to start blazegraph, i.e.
+```
+scripts/startBigdata.sh
+scripts/startBlazegraph.sh
+scripts/startDebug.sh
+```
+
+Use the GNU Screen utility to start blazegraph in a persistent shell that can be detached and left to run while exiting from the VM.  (There may be other ways to run blazegraph as a daemon on VM startup - if you discover it, please note the solution in a new github issue.  It's likely something to do with installing Apache Tomcat or JBoss container servers and using a blazegraph WAR build.)
 
 ## Environment
 
