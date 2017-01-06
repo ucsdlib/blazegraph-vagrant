@@ -8,27 +8,16 @@ This repository creates a Vagrant VM that bundles the [Blazegraph](https://www.b
 
 ## Usage
 
-1. `git clone https://github.com/ucsdlib/blazegraph-vagrant.git`
+1. clone this repository
 2. `cd blazegraph-vagrant`
-3. `vagrant up`
+3. `vagrant up` (and be patient)
 
-You can shell into the machine with `vagrant ssh` or `ssh -p 2222 vagrant@localhost`
+You can shell into the machine with `vagrant ssh`
 
 ## Environment
 
-* Ubuntu 14.04 64-bit machine with:
-  * [Blazegraph 1.5.3](http://sourceforge.net/projects/bigdata/files/bigdata/1.5.3/) at [http://localhost:9999/bigdata/](http://localhost:9999/bigdata/)
-  * (more soon)
-
-## Windows Troubleshooting
-
-If you receive errors involving `\r` (end of line):
-
-Edit the global `.gitconfig` file by running the command:
-```
-git config --global core.autocrlf false
-```
-Remove and clone again. This will prevent windows git clients from automatically replacing unix line endings LF with windows line endings CRLF. 
+* Ubuntu 16.04 64-bit machine
+* [Blazegraph 2.1.4](https://github.com/blazegraph/database.git) at [http://localhost:9999/bigdata/](http://localhost:9999/bigdata/)
 
 ## Thanks
 
